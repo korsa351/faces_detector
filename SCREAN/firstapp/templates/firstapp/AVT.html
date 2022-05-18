@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .reg{
+        position: relative;
+        left:  70px;
+        top: -25px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Login</button>
+    </form>
+</div>
+<div class = "reg">
+<button style="width:100px;height:30px">
+    <a href="http://127.0.0.1:8000/reg/">Регистрация</a>
+</button>
+</div>
+</body>
+</html>
